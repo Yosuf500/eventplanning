@@ -445,7 +445,8 @@ prep_stmt->execute();
  cin >> store_id;
  
  cout << "Bakery Name : ";
- cin >> bakery_name;
+ cin.ignore(); 
+ getline(cin, bakery_name);
 
  cout << "Services Offered : ";
  cin >> service_offered;
@@ -477,7 +478,8 @@ prep_stmt->execute();
  cin >> venue_id;
  
  cout << "Venue Name : ";
- cin >> venue_name;
+ cin.ignore(); 
+ getline(cin, venue_name);
 
  cout << "Capacity : ";
  cin >> capacity;
